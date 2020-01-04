@@ -1,0 +1,12 @@
+
+cd ../TISA/ArduinoClient
+gcc main.cpp Serial_communication.cpp Client_communication.cpp gbn.cpp   swing_door.cpp Client_thread.cpp -lpthread  -o Client
+
+
+cd../TISA/Servidor
+
+
+gcc communication.cpp main.cpp gbn.cpp thread.cpp -lpthread -o server
+
+
+
